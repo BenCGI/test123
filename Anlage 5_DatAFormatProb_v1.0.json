@@ -2,14 +2,10 @@
   "$id": "https://example.com/xsdexample.schema.json",
   "title": "Example XSD to JSON Schema",
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "anyOf": [
-    {
-      "type": "object",
-      "properties": {
-        "deliveryContainer": { "$ref": "#/$defs/DeliveryContainer" }
-      }
-    }
-  ],
+  "type": "object",
+  "properties": {
+    "deliveryContainer": { "$ref": "#/$defs/DeliveryContainer" }
+  },
   "$defs": {
     "ProbenContainerType.MitteilungsgrundContainer": {
       "type": "object",
